@@ -35,7 +35,13 @@ after commande you will see that is <strong>active </strong>and <strong>running<
 
 ### Docker search 
 The “docker search” command searches for specific images through the Docker hub. This command returns the specific information, including image name, description, automated, official stars, etc. Here is how to use it – 
-`docker search MySQL`
+```bash
+docker search MySQL
+```
+Docker Hub is the world's easiest way to create, manage, and deliver your team's container applications.
+### Docker Hub
+<strong>Docker Hub</strong> is the world's easiest way to create, manage, and deliver your team's container applications.
+
 
 ### Docker pull
 
