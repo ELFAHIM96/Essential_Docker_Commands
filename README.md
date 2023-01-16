@@ -26,10 +26,18 @@ go to ![install docker](https://docs.docker.com/desktop/)
 ### Docker version
 go to the Terminal and tyoe `docker ` you will get a lot  of commandes
 og get version that you are using type:
+```bash
 `docker --version` or `docker -V`
+ ```
 
-at each time you run docker make sure that docker daeman is running to enable docker `sudo systemctl status docker`
-if it <strong> inactive</strong> you do this commande `sudo systemctl enable --now docker` 
+at each time you run docker make sure that docker daeman is running to enable docker 
+```bash
+`sudo systemctl status docker`
+```
+if it <strong> inactive</strong> you do this commande 
+```bash
+`sudo systemctl enable --now docker` 
+```
 after commande you will see that is <strong>active </strong>and <strong>running</strong>
 
 
