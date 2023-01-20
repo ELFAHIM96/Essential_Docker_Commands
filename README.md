@@ -111,6 +111,11 @@ then we can remove a specified container by runing :
 ```bash
 docker rm <container_id>
 ```
+To remove all container you can run:
+```bash 
+docker rm $(docker ps -aq)
+```
+
 ### Docker restart 
 
 ### Docker kill
