@@ -52,14 +52,65 @@ Docker Hub is the world's easiest way to create, manage, and deliver your team's
 
 
 ### Docker pull
-
-
+to pull an images form <strong>docker hub</strong> and run a container from it for exmeple image of `NGINX` r `mongoDB`
+```bash
+docker pull nginx
+```
+or,
+```bash
+docker pull mongoDB
+```
+### docker Images
+in order for as to see<strong> all images</strong> go a head and type:
+```bash
+docker images
+```
 ### Docker run 
-
+Runung Containters form this image: for exemple nginx image
+```bash
+docker run nginx:latest
+```
+now we can see and describe the list of all runing containers:
+```bash
+docker container ls
+```
 ### Docker ps
+you can check the list of running containers by runing:
+```bash
+docker ps
+```
+you can also check the the list of all containers (runing and not runing )
+```bash
+docker ps -a
+```
+or if you want to see just numeric IDs
+```bash
+docker ps -aq
+```
 
+
+### docker Exposing Port
+before we run the container we add simply `Port 8080:80` which means Port 8080 on the host should be maped on port 80 on the container 
+```bash
+docker run -d -p 8080:80 nginx:latest
+```
+now you can go to the browser and type `localhost:8080` you can change port as you like `localhost:3000` 
+### Docker Exposing Multiple Ports
+we could also maps more then one port at the same time 
+```bash
+docker run -d -p 3000:80 -p 8080:80 nginx:latest
+```
 ### Docker stop 
-
+to stop the container you can simply run this commande
+```bash
+docker stop <container_id>
+```
+### docker remove 
+when you check all the container by runing commend `docker ps -a`
+then we can remove a specified container by runing :
+```bash
+docker rm <container_id>
+```
 ### Docker restart 
 
 ### Docker kill
