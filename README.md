@@ -115,11 +115,69 @@ To remove all container you can run:
 ```bash 
 docker rm $(docker ps -aq)
 ```
+### docker name container
+we can identify our container and give it a name for exemple `mywebsite`
+```bash
+docker run --name mywebsite -d -p 3000:80 -p 8080:80 nginx:latest
 
-### Docker restart 
+```
+you should always name your container especially when you have multiple container at the same time 
+now we can use this name of container to stop, to run and remove it 
+Run:
+```bash 
+docker stop mywebsite
+```
+stop:
+```bash 
+docker stop mywebsite
+```
+remove:
+```bash
+docker rm mywebsite
+```
 
-### Docker kill
+### Docker Format 
+```bash
+docker ps --format = "ID\t{{.ID}}\nNAME\t{{.Names}}\nIMAGE\t{{.Image}}\nPORTS\t{{.Ports}}\nCOMMAND\t{{.Command}}\nCREATED\t{{.CreatedAt}}\nSTATUS\t{{.Status}}\n"
+```
+after this command the format will be nicer
+to export the format we type:
+```bash
+export FORMAT = "ID\t{{.ID}}\nNAME\t{{.Names}}\nIMAGE\t{{.Image}}\nPORTS\t{{.Ports}}\nCOMMAND\t{{.Command}}\nCREATED\t{{.CreatedAt}}\nSTATUS\t{{.Status}}\n"
+```
+then we can type easily
+```bash
+docker ps --format = $FORMAT
+```
+### Docker volume 
+So, now we will learn about docker Valumes allows sharing of data. Files & Folders between <strong>host and container</strong> and also between <strong>containers</strong>
+```bash
+docker run --name website -d -p 8080:80  nginx
 
+```
+```bash
+cd file
+pwd
+```
+
+now we will create Volume between our host and container ,
+
+Read only
+```bash
+docker run --name website -v$(pwd):/usr/share/nginx/html:ro -d -p 8080:80  nginx
+```
+Read and write just we should remove `:ro`
+```bash
+docker run --name website -v$(pwd):/usr/share/nginx/html -d -p 8080:80  nginx
+```
+### Docker exec
+```bash
+docker exec -it website bash
+> ls -al
+>cd /sur/share/nginx/html
+>ls -al
+>touch about.html
+```
 ### Docker exec 
 
 ### Docker login
@@ -138,7 +196,8 @@ docker rm $(docker ps -aq)
 
 ### Docker copy
 
-### Docker logs   
+### Docker logs   ### Docker volume 
+
 
 ### Docker volume 
 
