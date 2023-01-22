@@ -185,6 +185,11 @@ docker exec -it website bash
 ```
 ### Dockerfile 
 how to use dockerfile to create our images 
+Docker image should containe everything that your application needs to run dependencies,  source code 
+```bash
+docker build --tag website:latest .
+```
+so we have build an image
 
 ### Docker login
 
