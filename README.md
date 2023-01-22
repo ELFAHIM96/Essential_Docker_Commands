@@ -189,7 +189,7 @@ Docker image should containe everything that your application needs to run depen
 ```bash
 docker build --tag website:latest .
 ```
-so we have build an image
+so we have build an image, and we can run the container from it 
 
 ### Docker login
 
