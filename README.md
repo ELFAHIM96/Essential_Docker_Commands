@@ -190,6 +190,17 @@ Docker image should containe everything that your application needs to run depen
 docker build --tag website:latest .
 ```
 so we have build an image, and we can run the container from it 
+```bash
+cd userservice
+docker build --tag userservice:latest
+```
+Successfully built 7e69b58efbb8
+Successfully tagged userservice:latest
+you can type now:
+```bash
+docker image ls
+```
+you can see the image that we build 
 
 ### Docker login
 
