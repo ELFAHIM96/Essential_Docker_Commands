@@ -170,6 +170,11 @@ Read and write just we should remove `:ro`
 ```bash
 docker run --name website -v$(pwd):/usr/share/nginx/html -d -p 8080:80  nginx
 ```
+
+share the Volumes between Containers (content, files)
+```bash
+docker run --name website-copy --volumes-from mywebsites -d -p 8081:80 nginx
+```
 ### Docker exec
 ```bash
 docker exec -it website bash
@@ -178,7 +183,8 @@ docker exec -it website bash
 >ls -al
 >touch about.html
 ```
-### Docker exec 
+### Dockerfile 
+how to use dockerfile to create our images 
 
 ### Docker login
 
@@ -196,9 +202,7 @@ docker exec -it website bash
 
 ### Docker copy
 
-### Docker logs   ### Docker volume 
+### Docker logs   
 
-
-### Docker volume 
 
 ### Docker logout 
