@@ -85,6 +85,19 @@ Run following kubectl command to verify deployment status
 $ kubectl get deployments.apps my-nginx
 $ kubectl get pods
 ```
+### Step 8) Managing Minikube Cluster
+to stop minikube cluster
+```bash
+$ minikube stop
+```
+in order to  delete the minikube, run the following command:
+```bash
+$ minikube delete
+```
+To Start the minikube, run
+```bash
+$ minikube start
+```
 
 
 
