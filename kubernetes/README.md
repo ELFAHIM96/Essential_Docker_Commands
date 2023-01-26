@@ -19,24 +19,30 @@ intall the following minikube dependencies by runing this commands:
 sudo apt install -y curl wget apt-transport-https
 
 ```
-
-
+### Step 3) Download Minikube Binary
+We use the get command to download minikube binary
 ```bash
-
+wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 
 ```
+Once the minikube binary is downloaded
 ```bash
-
+$ sudo cp minikube-linux-amd64 /usr/local/bin/minikube
+$ sudo chmod +x /usr/local/bin/minikube
+```
+Verify the minikube version
+```bash
+minikube version
 
 ```
 
+### Step 4) Install Kubectl utility
+
+kubectl utility is a command line which used to interact with kubernetes cluster. it used for managenig deployments, service and podsetc.
+
+to download it we use the follwing command, with this command we will doawload the latest version
 ```bash
-
-
-```
-
-```bash
-
+$ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 
 ```
 
