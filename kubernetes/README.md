@@ -56,13 +56,14 @@ verify the kubectl vesrion
 kubectl version -o yaml
 ```
 ### Step 5) Start minikube
+now we will state in the beginning that we would be using docker as base for minikue, so start the minikube with the docker driver, run
 ```bash
-
+minikube start --driver=docker
 
 ```
 
 ```bash
-
+minikube start --addons=ingress --cpus=2 --cni=flannel --install-addons=true --kubernetes-version=stable --memory=6g
 
 ```
 
