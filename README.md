@@ -214,6 +214,7 @@ you can see the image that we build
 
 ### Docker rmi 
 Remove one or more images
+You can remove an image using its short or long ID, its tag, or its digest.
 
 ```bash
  docker rmi [OPTIONS] IMAGE [IMAGE...]
