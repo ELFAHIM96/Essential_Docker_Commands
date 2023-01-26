@@ -45,12 +45,17 @@ to download it we use the follwing command, with this command we will doawload t
 $ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 
 ```
+Once kubectl is downloaded then set the following command 
 
 ```bash
-
-
+$ chmod +x kubectl
+$ sudo mv kubectl /usr/local/bin/
 ```
-
+verify the kubectl vesrion
+```bash
+kubectl version -o yaml
+```
+### Step 5) Start minikube
 ```bash
 
 
