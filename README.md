@@ -224,7 +224,8 @@ to remove image we use image ID or name of images
  docker rmi fd484f19954f
 ```
 or 
-```docker rmi [name_image]
+```bash
+docker rmi [name_image]
 ```
 
 ### Docker ps -a
