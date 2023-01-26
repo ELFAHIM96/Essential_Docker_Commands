@@ -67,11 +67,25 @@ minikube start --addons=ingress --cpus=2 --cni=flannel --install-addons=true --k
 
 ```
 
+### Step 6) Managing Addons on minikube
+
 ```bash
+$ minikube addons list
 
+```
+### Step 7) Verify Minikube Installation
+to verify minikube installation we will deploy `nignix` image
 
+```bash
+$ kubectl create deployment my-nginx --image=nginx
+```
+Run following kubectl command to verify deployment status
+
+```bash
+$ kubectl get deployments.apps my-nginx
+$ kubectl get pods
 ```
 
 
-#### install kuberctl
+
 
