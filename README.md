@@ -213,6 +213,19 @@ you can see the image that we build
 ### Docker history 
 
 ### Docker rmi 
+Remove one or more images
+
+```bash
+ docker rmi [OPTIONS] IMAGE [IMAGE...]
+$  docker images
+```
+to remove image we use image ID or name of images
+```bash
+ docker rmi fd484f19954f
+```
+or 
+```docker rmi [name_image]
+```
 
 ### Docker ps -a
 
