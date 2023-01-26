@@ -203,6 +203,18 @@ docker image ls
 you can see the image that we build 
 
 ### Docker login
+login to docker registry
+
+```bash
+
+ docker login [OPTIONS] [SERVER]
+ ```
+ <strong> OPTIONS</strong>:
+
+```bash
+$ docker login localhost:8080
+$ cat ~/my_password.txt | docker login --username foo --password-stdin
+  ```
 
 ### Docker commit 
 
