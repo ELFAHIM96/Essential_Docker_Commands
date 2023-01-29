@@ -128,6 +128,17 @@ now we can deploy a container  in a  kubernetes pod
 ```bash
 kubectl create deployment node-app --image app-text:v1
 ```
+```bash
+kubectl get deployment
+```
+
+```bash
+kubectl get pods
+```
+
+```bash
+kubectl expose deployment node-app --type=NodePort --port=8080
+```
 
 
 
