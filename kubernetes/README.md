@@ -118,6 +118,19 @@ echo $DOCKER_HOST
 ```
 `tcp://192.168.49.2:2376`
 
+### Deploy a container in a kubernetes pod
+
+Create an image docker 
+```bash
+docker build . -t app-text:v1
+```
+now we can deploy a container  in a  kubernetes pod
+```bash
+kubectl create deployment node-app --image app-text:v1
+```
+
+
+
 
 
 
