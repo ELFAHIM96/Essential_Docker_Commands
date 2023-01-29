@@ -99,6 +99,27 @@ To Start the minikube, run
 $ minikube start
 ```
 
+### configure local client docker environment
+```bash
+$ minkube start
+```
+to connect the docker client to docker engine which provided by Minikube,
+the minikube docker-env command returns the necessary environment variables to configure
+```bash
+echo $(minikube docker-env)
+```
+message:
+export DOCKER_TLS_VERIFY="1" export DOCKER_HOST="tcp://192.168.49.2:2376" export DOCKER_CERT_PATH="/home/omar/.minikube/certs" export MINIKUBE_ACTIVE_DOCKERD="minikube" # To point your shell to minikube's docker-daemon, run: # eval $(minikube -p minikube docker-env)
+```bash
+eval $(minikube -p minikube docker-env)
+```
+```bash
+echo $DOCKER_HOST
+```
+`tcp://192.168.49.2:2376`
+
+
+
 
 
 

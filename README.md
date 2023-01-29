@@ -241,8 +241,6 @@ or
 docker rmi [name_image]
 ```
 
-### Docker ps -a
-
 ### Docker copy
 
 ### Docker logs   
