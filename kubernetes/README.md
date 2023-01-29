@@ -139,6 +139,12 @@ kubectl get pods
 ```bash
 kubectl expose deployment node-app --type=NodePort --port=8080
 ```
+```bash
+kubectl describe service node-app1
+```
+```bash
+minikube service node-app
+```
 
 
 
