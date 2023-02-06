@@ -183,6 +183,14 @@ kubectl delete service <app>
  ```bash
  kubectl delete pod <name of pod >
 ```
+```bash
+minikube stop
+minikube detele
+```
+you can start again by runing new minikube
+```bash
+minikube start
+```
 
 
 
