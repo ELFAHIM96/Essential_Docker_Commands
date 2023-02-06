@@ -120,6 +120,9 @@ echo $DOCKER_HOST
 
 ### Deploy a container in a kubernetes pod
 
+```bash
+kubectl --version
+```
 Create an image docker 
 ```bash
 docker build . -t app-text:v1
@@ -128,10 +131,11 @@ now we can deploy a container  in a  kubernetes pod
 ```bash
 kubectl create deployment node-app --image app-text:v1
 ```
+
 ```bash
 kubectl get deployment
 ```
-
+consult pods run the following command:
 ```bash
 kubectl get pods
 ```
@@ -140,11 +144,48 @@ kubectl get pods
 kubectl expose deployment node-app --type=NodePort --port=8080
 ```
 ```bash
-kubectl describe service node-app1
+kubectl describe service node-app
 ```
+### Consult the remote app-test service
 ```bash
 minikube service node-app
 ```
+### Consult the local app-test service
+
+Linux:
+```bash
+kubectl get pods
+
+kubectl exec -ti <name of pod > bash
+```
+Windows:
+```bash
+winpty kubectl exec <nome of pod > bash 
+```
+```bash
+/# ls
+
+/# cat <file>
+
+/# exit
+```
+
+### Clean
+
+```bsah
+kubectl describe service node-app
+```
+### delete service node app
+
+```bash
+kubectl delete service <app>
+ ```
+ ```bash
+ kubectl delete pod <name of pod >
+```
+
+
+
 
 
 
