@@ -1,7 +1,10 @@
-### How to install kubenetes
+### What is Kubernetes
+Kubernetes  is an open-source container orchestration system for automating software deployment, scaling, and management. Originally designed by Google, the project is now maintained by the Cloud Native Computing Foundation is an open-source container orchestration system for automating software deployment, scaling, and management. Originally designed by Google, the project is now maintained by the Cloud Native Computing Foundation
+
+### How to install kubernetes
 
 
-### Step 1) Apply updates
+### Step 1 Apply updates
 Apply all updates of existing packages of your system
 ```bash
 sudo get-apt update
@@ -11,7 +14,7 @@ sudo get-apt upgrade
 
 first of all we should install minikibe and kuberctl
 
-#### Step 2) Install Minikube dependencies
+#### Step 2 Install Minikube dependencies
 
 intall the following minikube dependencies by runing this commands:
 
@@ -191,6 +194,7 @@ you can start again by runing new minikube
 ```bash
 minikube start
 ```
+
 
 
 
