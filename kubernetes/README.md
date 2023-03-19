@@ -5,7 +5,7 @@ Kubernetes  is an open-source container orchestration system for automating soft
 
 
 ### Step 1 Apply updates
-Apply all updates of existing packages of your system
+Apply all updates of existing packages of your system 
 ```bash
 sudo get-apt update
 sudo get-apt upgrade
@@ -13,6 +13,8 @@ sudo get-apt upgrade
 
 
 first of all we should install minikibe and kuberctl
+
+Minikube is a lightweight Kubernetes implementation that creates a VM on your local machine and deploys a simple cluster containing only one node
 
 #### Step 2 Install Minikube dependencies
 
