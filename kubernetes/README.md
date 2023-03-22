@@ -12,6 +12,7 @@ sudo get-apt upgrade
 ```
 
 
+
 first of all we should install minikibe and kuberctl
 
 Minikube is a lightweight Kubernetes implementation that creates a VM on your local machine and deploys a simple cluster containing only one node
@@ -124,6 +125,8 @@ echo $DOCKER_HOST
 `tcp://192.168.49.2:2376`
 
 ### Deploy a container in a kubernetes pod
+
+Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers. A Pod's contents are always co-located and co-scheduled, and run in a shared context
 
 ```bash
 kubectl --version
